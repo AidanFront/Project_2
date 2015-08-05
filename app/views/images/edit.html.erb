@@ -1,0 +1,17 @@
+<h2>edit</h2>
+
+<%= form_tag "/home/#{@image.id}" do %>
+  <%= hidden_field_tag '_method', 'put' %>
+  <%= label_tag 'Name:'%>
+  <%= text_field_tag :name, @image.name %>
+  <%= label_tag 'URL:' %>
+  <%= text_field_tag :url %>
+  <button>update</button>
+<% end %>
+
+<%= form_tag "/home/#{@image.id}/delete" do %>
+  <%= hidden_field_tag '_method', 'delete' %>
+  <button>delete</button>
+<% end %>
+
+<img src="<%= @image.url %>" >

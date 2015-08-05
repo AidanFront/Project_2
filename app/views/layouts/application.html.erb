@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PetPic</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'
+</head>
+<body>
+
+<div id="title_area">
+  <p id="title">PET PICS</p>
+</div>
+
+<%= yield %>
+
+session <%= session[:user_id] %>
+
+</body>
+</html>

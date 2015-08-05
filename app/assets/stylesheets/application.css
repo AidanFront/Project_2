@@ -1,0 +1,67 @@
+/*#button_box {
+  display: inline-block;
+}*/
+
+
+.btn{
+  /*width: 50%;*/
+  display: inline;
+  /*justify-content: flex-start | center;*/
+  /*justify-content: flex-start | flex-end | center | space-between | space-around;*/
+}
+
+body {
+  /*background-image: url("http://wallpapershdfine.com/wp-content/gallery/cat-paw-print-images/paw-prints.jpg");*/
+  /*background-image: url("http://jellystonemarion.com/static/media/uploads/paw_print.png");*/
+  /*background-image: url("http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-animals/010423-3d-transparent-glass-icon-animals-paw-print3.png");*/
+  /*background-image: url("http://images.bootkidz.co.uk/paw-print-outline.png");*/
+  background-color: #FFFCD4;
+  /*background-repeat: no-repeat;*/
+  /*background-position: 50% 100px;*/
+  /*background-size: cover;*/
+  text-align: center;
+}
+
+#title_area {
+  background-color: yellow;
+  width: 23%;
+  height: 5em;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+
+#title {
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Monofett', cursive;  
+  color: black;
+}
+
+      #Login_box {
+        text-align: center;
+        background-color: grey;
+        border-radius: 20px;
+        border: solid black;
+        padding: 5px;
+        width: 200px;
+        margin: 100px auto 0px;
+      }
+
+      #user_box { 
+        text-align: center;
+        background-color: grey; 
+        padding: 10px 10px 10px;
+      }
+
+      #password_box {
+        text-align: center;
+        background-color: grey; 
+        padding: 0px 10px 10px;
+      }
+
+
+        .login_input {
+          text-align: center;
+          font-size: 1em;
+          font-family: 'Share Tech Mono', ;  
+        }

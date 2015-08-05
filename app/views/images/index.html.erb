@@ -1,0 +1,9 @@
+
+<% @pics.each do |p| %>
+    <p><%= p.name %></p>
+    <a href="/home/<%= p.id%>/edit">
+      <img src="<%= p.url %>">
+    </a>
+<% end %>
+
+

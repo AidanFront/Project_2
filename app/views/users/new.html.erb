@@ -1,0 +1,15 @@
+
+
+<%= form_tag '/home' do %>
+  <%= hidden_field_tag '_method', 'post' %>
+  <%= label_tag 'name' %>
+  <%= text_field_tag :name %>
+
+  <%= label_tag 'email' %>
+  <%= text_field_tag :email %>
+
+  <%= label_tag 'passowrd' %>
+  <%= password_field_tag :password %>
+
+  <button>Create</button>
+<% end %>
