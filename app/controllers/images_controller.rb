@@ -2,6 +2,8 @@ class ImagesController < ApplicationController
 
   def index
     @pics = Image.all
+    # raise 'dsfhjga'
+    @userpics = Image.where(user_id: session[:user_id])
   end
 
   def new 
@@ -12,6 +14,7 @@ class ImagesController < ApplicationController
     @images = Image.new
     @images.name = params[:name]
     @images.url = params[:url]
+    @images.user_id = session[:user_id]
     @images.save
     redirect_to '/home'
   end
@@ -32,10 +35,11 @@ class ImagesController < ApplicationController
     @image = Image.find params[:id]
 
     if !@image.can_delete?(current_user)
-      redirect_to '/home'
+      #do nothing
+    else
+      @image.destroy
     end
-
-    @image.destroy
+    
     redirect_to '/home'
   end
 

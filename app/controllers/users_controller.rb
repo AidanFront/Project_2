@@ -35,4 +35,8 @@ class UsersController < ApplicationController
     redirect_to '/'
   end
 
+  def show
+    @userpics = Image.where(user_id: session[:user_id])
+  end
+
 end

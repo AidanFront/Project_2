@@ -1,21 +1,24 @@
 Rails.application.routes.draw do
     #custom routes
-    # controller : action
-  get '/about' => 'pages#about'
-  get '/contact' => 'pages#contact'
+    
+#-------------------------------------------
+###USERS###
 
-  # delete 'layout' => 'session#destroy'
-
-  # #Home 
+  # #Home     # controller : action
   get '/' => 'users#index'
   post '/home/users' => 'users#create'
   post '/home/login' => 'users#login'
+  delete '/logout' => 'users#logout'
 
-
-  # get '/'
+  # New Users
   get '/users/new' => 'users#new'
   post '/users/create' => 'users#create'
-  delete '/logout' => 'users#logout'
+
+  #User profile
+  get '/users/:id' => 'users#show'
+
+#-------------------------------------------
+###IMAGES###
 
   #Images Home page
   get '/home' => 'images#index'
