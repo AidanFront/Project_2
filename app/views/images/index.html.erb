@@ -1,3 +1,6 @@
+<!-- Main page once user is logged in -->
+
+<!-- ======= News Feed side of the page ======= -->
 
 <div class="container">
   
@@ -9,6 +12,7 @@
     
           <!-- 1st Layer of rows-->
           <div class="row">
+              <!-- loop through all pictures -->
               <% @pics.each do |p| %>
                 <div class="col-md-4 pictures">
                   <a class="pic_a" href="/home/<%= p.id%>/show">
@@ -21,6 +25,8 @@
     
       </div>
       
+<!-- ======= Profile side of the page ======= -->
+
       <!-- 1st Layer of rows 30% part-->
       <div class="col-md-4">
             <div id="profile_box">
@@ -28,15 +34,14 @@
               <a id="profile_title" href ="users/<%= current_user.id %>/ ">
                 <%= current_user.name %>
               </a>
-                <!-- Miniateur of a Users images  -->
+                <!-- Miniateur of a Users images -loop -->
                 <% @userpics.each do |u| %>
-                    <!-- <div class="row"> -->
                         <div class="profile_pic">
                           <a href="/home/<%= u.id%>/edit">
                             <img class="profile_img" src="<%= u.url %>">
                           </a>
                         </div>
-                    <!-- </div> -->
+
               <% end %>
             </div>
       </div>

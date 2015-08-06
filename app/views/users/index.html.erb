@@ -1,6 +1,8 @@
+<!-- Login Page -->
 
 <div id='Login_box'>
 
+    <!-- Login existing user -->
     <%= form_tag '/home/login' do %>
         <div id="user_box" class="login">
           <%= text_field_tag :name, nil ,:placeholder => 'username', class: "user_box_input" %> 
@@ -13,13 +15,11 @@
     <% end %>
         
 
-        
-        <%= form_tag "/users/new" do %>
-          <%= hidden_field_tag '_method', 'get' %>
-          <button id="btn_new" class="btn_start" >New Account</button>
-        <% end %>
-        <!-- </div> -->
-
+    <!-- Redirect to create a new user -->
+    <%= form_tag "/users/new" do %>
+      <%= hidden_field_tag '_method', 'get' %>
+      <button id="btn_new" class="btn_start" >New Account</button>
+    <% end %>
 
 </div>
 
