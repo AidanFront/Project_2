@@ -2,7 +2,6 @@ class ImagesController < ApplicationController
 
   def index
     @pics = Image.all
-    # raise 'dsfhjga'
     @userpics = Image.where(user_id: session[:user_id])
   end
 
@@ -17,6 +16,10 @@ class ImagesController < ApplicationController
     @images.user_id = session[:user_id]
     @images.save
     redirect_to '/home'
+  end
+
+  def show
+    @image = Image.find params[:id]
   end
 
   def edit

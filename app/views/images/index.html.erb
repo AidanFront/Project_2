@@ -1,5 +1,4 @@
 
-
 <div class="container">
   
   <!-- 1st Layer of rows-->
@@ -12,7 +11,7 @@
           <div class="row">
               <% @pics.each do |p| %>
                 <div class="col-md-4 pictures">
-                  <a class="pic_a" href="/home/<%= p.id%>/edit">
+                  <a class="pic_a" href="/home/<%= p.id%>/show">
                     <p class="pic_name"><%= p.name %></p>
                     <img class="pic_img" src="<%= p.url %>">
                   </a>
@@ -24,18 +23,22 @@
       
       <!-- 1st Layer of rows 30% part-->
       <div class="col-md-4">
-          <a href ="users/<%= current_user.id %>/ ">
-          <%= current_user.name %>
-          </a>
-            <% @userpics.each do |u| %>
-                <div class="col-md-4 pictures">
-                  <a class="pic_a" href="/home/<%= u.id%>/edit">
-                    <p class="pic_name"><%= u.name %></p>
-                    <img class="pic_img" src="<%= u.url %>">
-                  </a>
+            <div id="profile_box">
+              <!-- User name -->
+              <a id="profile_title" href ="users/<%= current_user.id %>/ ">
+                <%= current_user.name %>
+              </a>
+                <!-- Miniateur of a Users images  -->
+                <% @userpics.each do |u| %>
+                    <!-- <div class="row"> -->
+                        <div class="profile_pic">
+                          <a href="/home/<%= u.id%>/edit">
+                            <img class="profile_img" src="<%= u.url %>">
+                          </a>
+                        </div>
+                    <!-- </div> -->
+              <% end %>
             </div>
-          <% end %>
-
       </div>
   </div>
 

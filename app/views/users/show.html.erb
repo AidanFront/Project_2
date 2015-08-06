@@ -1,11 +1,14 @@
-<button>Upload</button>
+<%= form_tag "/home/new" do %>
+  <%= hidden_field_tag '_method' , 'get' %>
+  <button id="btn_upload" >Upload</button>
+<% end %>
 
            
-            <% @userpics.each do |u| %>
-                <div class="col-md-4 pictures">
-                  <a class="pic_a" href="/home/<%= u.id%>/edit">
-                    <p class="pic_name"><%= u.name %></p>
-                    <img class="pic_img" src="<%= u.url %>">
-                  </a>
-            </div>
-            <% end %>
+    <% @userpics.each do |u| %>
+        <div class="col-md-4 pictures">
+          <a class="pic_a" href="/home/<%= u.id%>/edit">
+            <p class="pic_name"><%= u.name %></p>
+            <img class="pic_img" src="<%= u.url %>">
+          </a>
+    </div>
+    <% end %>

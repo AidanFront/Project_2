@@ -27,6 +27,9 @@ Rails.application.routes.draw do
   get '/home/new' => 'images#new' 
   post '/home' => 'images#create'  
 
+  #Show pictures
+  get '/home/:id/show' => 'images#show'
+
   # Edit a current image in Pet Pics
   get '/home/:id/edit' => 'images#edit' 
   put '/home/:id' => 'images#update' 
