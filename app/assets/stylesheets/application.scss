@@ -1,0 +1,110 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+* { border-sizing: border-box; }
+
+/*Title Stuff*/
+#header {margin-top: 50px;}
+  #header div {display: inline-block;}
+  #header img {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+  }
+  #header p {
+    margin: 0;
+    padding: 0;
+  }
+    #title {
+      font-size: 30px;
+      height: 60px;
+      line-height: 60px;
+      font-family: 'Monofett', cursive;  
+      color: black;
+    }
+
+/*LogOut Button*/
+.logout_stuff {
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.btn_logout {
+  height: 1.8em;
+  background-color: maroon;
+  color: white;
+}
+
+/*Back Ground*/
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
+/*Login Stuff*/
+
+#Login_box {
+  text-align: center;
+  background-color: grey;
+  border-radius: 20px;
+  border: solid black;
+  padding: 5px;
+  width: 200px;
+  margin: 100px auto 0px;
+}
+
+      #user_box { 
+        text-align: center;
+        background-color: grey; 
+        padding: 10px 10px 10px;
+      }
+      .user_box_input {text-align: center;}
+
+      #password_box {
+        text-align: center;
+        background-color: grey; 
+        padding: 0px 10px 10px;
+      }
+      .password_box_input {text-align: center;}
+
+
+        .login_input {
+          text-align: center;
+          font-size: 1em;
+          font-family: 'Share Tech Mono', ;  
+        }
+.btn_start{
+  background-color: #0080FF;
+  padding: 0px;
+  margin-bottom: 5px;
+  width: 80%;
+  display: inline;
+}
+
+/*Home Page once logged in*/
+.pictures:hover {
+  background-color: yellow;
+}
+
+.pictures {
+  background-color: black;
+  border: solid white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+  .pic_a{padding: 0px;}
+  .pic_name {margin: 0px;}
+  .pic_img {margin: 0px;}
+
+.container img { 
+  width: 200px; 
+  height: 100px; 
+}
+
+/*-----------*/
+

@@ -14,11 +14,10 @@ Rails.application.routes.draw do
 
   # get '/'
   get '/users/new' => 'users#new'
-  # post '/new_account' => 'user#create'
+  post '/users/create' => 'users#create'
+  delete '/logout' => 'users#logout'
 
-
-
-  #Users Home page
+  #Images Home page
   get '/home' => 'images#index'
 
   # Post a new image to Pet PIcs 

@@ -30,7 +30,12 @@ class ImagesController < ApplicationController
 
   def remove
     @image = Image.find params[:id]
-    @image.delete
+
+    if !@image.can_delete?(current_user)
+      redirect_to '/home'
+    end
+
+    @image.destroy
     redirect_to '/home'
   end
 

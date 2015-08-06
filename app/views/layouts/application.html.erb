@@ -6,16 +6,24 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link href='http://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<div id="title_area">
-  <p id="title">PET PICS</p>
-</div>
+<!-- Add Logout button if logged in User -->
+<% if logged_in? %>
+  <%= form_tag '/logout', method: :delete, :class => "logout_stuff" do %>
+    Logged in as: <%= current_user.name %>
+    <button class="btn_logout">Logout</button>
+  <% end %>
+<% end %>
 
+<!-- Render Pec Pics Title  -->
+<%= render '/shared/title' %>
+
+<!-- Render Content -->
 <%= yield %>
 
-session <%= session[:user_id] %>
 
 </body>
 </html>

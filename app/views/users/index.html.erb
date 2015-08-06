@@ -3,20 +3,20 @@
 
     <%= form_tag '/home/login' do %>
         <div id="user_box" class="login">
-          <%= text_field_tag :name %> 
+          <%= text_field_tag :name, nil ,:placeholder => 'username', class: "user_box_input" %> 
         </div>
         <div id="password_box">
-          <%= password_field_tag :password %>
+          <%= password_field_tag :password, nil ,:placeholder => 'password', class: "password_box_input" %>
         </div>
 
-        <button id="btn_login" class="btn" >Login</button>
+        <button id="btn_login" class="btn_start" >Login</button>
     <% end %>
         
 
         
         <%= form_tag "/users/new" do %>
           <%= hidden_field_tag '_method', 'get' %>
-          <button id="btn_new" class="btn" >New Account</button>
+          <button id="btn_new" class="btn_start" >New Account</button>
         <% end %>
         <!-- </div> -->
 

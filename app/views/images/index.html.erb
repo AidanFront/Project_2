@@ -1,9 +1,39 @@
 
-<% @pics.each do |p| %>
-    <p><%= p.name %></p>
-    <a href="/home/<%= p.id%>/edit">
-      <img src="<%= p.url %>">
-    </a>
-<% end %>
+
+<div class="container">
+  
+  <!-- 1st Layer of rows-->
+  <div class="row">
+      
+      <!-- 1st Layer of rows 60% part-->
+      <div class="col-md-8">
+    
+          <!-- 1st Layer of rows-->
+          <div class="row">
+              <% @pics.each do |p| %>
+                <div class="col-md-4 pictures">
+                  <a class="pic_a" href="/home/<%= p.id%>/edit">
+                    <p class="pic_name"><%= p.name %></p>
+                    <img class="pic_img" src="<%= p.url %>">
+                  </a>
+                </div>
+              <% end %>
+          </div>
+    
+      </div>
+      
+      <!-- 1st Layer of rows 30% part-->
+      <div class="col-md-4">
+          session <%= session[:user_id] %>
+          <%= session[:name] %>
+
+      </div>
+  </div>
+
+</div>
+
+
+
+
 
 

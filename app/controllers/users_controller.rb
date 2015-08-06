@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    raise 'sdfsdf'
     @user = User.new(params[:user])
     @user.name = params[:name]
     @user.email = params[:email]
@@ -29,8 +28,11 @@ class UsersController < ApplicationController
       # fail life
       render :index
     end
+  end
 
-
+  def logout
+    session[:user_id] = nil
+    redirect_to '/'
   end
 
 end
