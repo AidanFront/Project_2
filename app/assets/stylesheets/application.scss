@@ -154,7 +154,13 @@ body {
 .img_upload {margin-top: 40px}
 
 /*Image show page*/
-.img_show {margin-top: 40px;}
+#show_page {
+  display: block;
+  margin-top: 10px;
+}
+
+#show_btn {margin-top: 40px;}
+/*.img_show {margin-top: 20px;}*/
 
 /*Image edit page*/
 .img_edit {margin-top: 40px;}
