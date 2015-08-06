@@ -1,6 +1,6 @@
 
 
-<%= form_tag '/users/create' do %>
+<%= form_tag '/users/create' ,:class => "new_user" do %>
   <%= hidden_field_tag '_method', 'post' %>
   <%= label_tag 'name' %>
   <%= text_field_tag :name %>
@@ -11,5 +11,5 @@
   <%= label_tag 'passowrd' %>
   <%= password_field_tag :password %>
 
-  <button>Create</button>
+  <button class="btn_general" >Create</button>
 <% end %>

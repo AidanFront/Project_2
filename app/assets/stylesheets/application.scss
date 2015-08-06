@@ -31,9 +31,11 @@
 }
 
 .btn_logout {
-  height: 1.8em;
+  height: 2em;
   background-color: maroon;
   color: white;
+  border: solid grey;
+  border-radius: 1px;
 }
 
 /*Back Ground*/
@@ -82,6 +84,8 @@ body {
   display: inline;
 }
 
+.new_user {margin-top: 40px;}
+
 /*Home Page once logged in*/
 .pictures:hover {background-color: yellow;}
 
@@ -108,7 +112,7 @@ body {
   height: 100px; 
 }
 
-/*Profile page*/
+/*Profile column*/
 #profile_box{
   background-color: #FFFFCC;
   margin: 0px;
@@ -118,6 +122,8 @@ body {
   border-radius: 10px;
 }
     #profile_title {
+      font-weight: bold;
+      color: #00CCCC;
       display: block;
       margin-bottom: 3px;
     }
@@ -134,7 +140,9 @@ body {
       width: 100%;
       height: 100%;
     }
-#btn_upload {
+
+/*General button for upload, edit and show page btn*/
+.btn_general { 
   text-align: right;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -142,5 +150,13 @@ body {
   border-radius: 5px;
 }
 
+/*Profile Page*/
+.img_upload {margin-top: 40px}
+
+/*Image show page*/
+.img_show {margin-top: 40px;}
+
+/*Image edit page*/
+.img_edit {margin-top: 40px;}
 /*-----------*/
 

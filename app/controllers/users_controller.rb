@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     @user.email = params[:email]
     @user.password = params[:password]
     @user.save
-    redirect_to '/home'
+    redirect_to '/'
   end
 
   def login
@@ -25,8 +25,8 @@ class UsersController < ApplicationController
       session[:user_id] = user.id 
       redirect_to '/home'
       else
-      # fail life
-      render :index
+      # Login fail
+      render :index, :alert => 'login fail'
     end
   end
 
