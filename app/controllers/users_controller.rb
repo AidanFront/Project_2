@@ -26,7 +26,8 @@ class UsersController < ApplicationController
       redirect_to '/home'
       else
       # Login fail
-      render :index, :alert => 'login fail'
+      flash[:notice] = 'login fail'
+      render :index
     end
   end
 
