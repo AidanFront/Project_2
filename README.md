@@ -19,13 +19,13 @@ An image hosting site made to host all those endless cat pictures.
 psql hosted tables.
 The site relies on two different tables.
 
-####User table
-This is a table of all the user details and login information.
-The **User** table has 3 columns. **Name** , **email** & **Password**.
+..#####User table
+..This is a table of all the user details and login information.
+..The **User** table has 3 columns. **Name** , **email** & **Password**.
 
-####Image table
-This is a table of all the image details.
-The **Image** table has 3 columns. **Name** , **url** & **User ID** which uploaded the image.
+..#####Image table
+..This is a table of all the image details.
+..The **Image** table has 3 columns. **Name** , **url** & **User ID** which uploaded the image.
 
 ###Cool tech/beens
 
