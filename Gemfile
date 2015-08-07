@@ -35,6 +35,8 @@ end
 
 gem 'seed_dump'
 
+gem 'font-awesome-sass'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

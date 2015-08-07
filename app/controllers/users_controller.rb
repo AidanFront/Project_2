@@ -27,13 +27,14 @@ class UsersController < ApplicationController
       else
       # Login fail
       flash[:notice] = 'login fail'
-      render :index
+      redirect_to '/'
     end
   end
 
   def logout
     session[:user_id] = nil
     redirect_to '/'
+    # render :index
   end
 
   def show
