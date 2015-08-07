@@ -21,9 +21,11 @@
       <button id="btn_new" class="btn_start" >New Account</button>
     <% end %>
 
-    <% if flash[:notice] %>
-      <%= "Login fail" %>
-    <% end %>
+    <div class="alert_msg">
+      <% if flash[:notice] %>
+        <%= 'Login fail' %>
+      <% end %>
+    </div>
 </div>
 
 
