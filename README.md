@@ -12,20 +12,28 @@ An image hosting site made to host all those endless cat pictures.
 
 ###How it works
 
-* [WireFrame](http://i.imgur.com/RHgvBaM.jpg)
+WireFrame:
+![alt text](http://i.imgur.com/RHgvBaM.jpg)
 
 
 ###Models
 psql hosted tables.
 The site relies on two different tables.
 
-..#####User table
-..This is a table of all the user details and login information.
-..The **User** table has 3 columns. **Name** , **email** & **Password**.
+    #####User table
+    This is a table of all the user details and login information.
+    The **User** table has 3 columns. **Name** , **email** & **Password**.
 
+    |Name|Email|Password|
+    |----|-----|--------|
+    |    |     |        |
+    
 ..#####Image table
 ..This is a table of all the image details.
 ..The **Image** table has 3 columns. **Name** , **url** & **User ID** which uploaded the image.
+|Name|Email|Password|
+|----|-----|--------|
+|    |     |        |
 
 ###Cool tech/beens
 
