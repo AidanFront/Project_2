@@ -1,18 +1,40 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
-
-  # create_table "images", force: :cascade do |t|
-  #   t.string   "name"
-  #   t.string   "url"
-
-  i1 = Image.create([{ name: 'Grumpy Cat' }, { url: 'http://orig02.deviantart.net/272b/f/2014/049/e/e/grumpy_cat_painting_by_threshthesky-d76ywj8.jpg' }])
-  i2 = Image.create([{ name: 'Duck' }, { url: 'http://www.graphics20.com/wp-content/uploads/2012/12/Funny-Duck-4.jpg' }])
-  i3 = Image.create([{ name: 'Max' }, { url: 'http://www.nsmbl.com/wp-content/uploads/2012/11/Screen-shot-2012-11-21-at-12.05.02-PM-610x250.png' }])
-
-  # rake db:seed
+Image.create!([
+  {name: "kitty", url: "http://focusdesignz.com/wp-content/uploads/2015/07/cat-photos_1436760228.jpg", user_id: 7},
+  {name: "Sammy", url: "http://i00.i.aliimg.com/wsphoto/v0/1509002936/-font-b-Cute-b-font-Small-font-b-Kitten-b-font-Kitty-Cat-Animal-32.jpg", user_id: 7},
+  {name: "Wallaby & Teddy", url: "http://i.kinja-img.com/gawker-media/image/upload/s--jFVGA4vQ--/c_fit,fl_progressive,q_80,w_636/1371838559368280867.jpg", user_id: 4},
+  {name: "Koala twins", url: "http://resources2.news.com.au/images/2007/07/26/va1237258803968/Koala-5584720.jpg", user_id: 4},
+  {name: "Platypus", url: "http://ak-hdl.buzzfed.com/static/enhanced/webdr02/2012/11/8/9/enhanced-buzz-26888-1352383334-6.jpg", user_id: 4},
+  {name: "Bibiche", url: "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/19025_10154005275942729_1727690202203419051_n.jpg?oh=4171a5193b32687c4a5291f0cbf8b6ab&oe=564289F6&__gda__=1446865087_c2885785378beed1ffe54b2e243b3e77", user_id: 8},
+  {name: "Bibiche after surgery (sexy leg)", url: "https://scontent-lax1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/11666018_10154005276417729_811860052361292492_n.jpg?oh=d6f90c8f933ccfe2a99f60321e828718&oe=56377492", user_id: 8},
+  {name: "Beagle puppy", url: "https://www.expatads.com/adpics1/2015/6/Cute-and-Charming-Beagle-Puppies-For-Sale557b7df38b38fe8bb0f7.jpg", user_id: 8},
+  {name: "Playtime", url: "http://feelgrafix.com/data_images/out/18/925530-beagles.jpg", user_id: 8},
+  {name: "Barney", url: "http://www.thelabradorsite.com/wp-content/uploads/2012/05/labrador-puppy.jpg", user_id: 8},
+  {name: "Spike", url: "http://cdn.cutestpaw.com/wp-content/uploads/2012/05/s-kiwi-my-baby-hedgehog.jpg", user_id: 10},
+  {name: "Snowwhite kiwi", url: "http://www.hdwallpapersphotos.com/wp-content/uploads/2013/12/Baby-Kiwi-Bird-540x303.jpg", user_id: 10},
+  {name: "Bunnies playing dead", url: "https://s-media-cache-ak0.pinimg.com/736x/23/3a/9d/233a9d630877391d97b6292a2f71c807.jpg", user_id: 7},
+  {name: "Bunny time", url: "http://www.woaw.org.au/wp-content/images/uploads/rspca-wa-rabbits1.jpg", user_id: 7},
+  {name: "just born", url: "http://www.gorbould.com/blog/wp-content/uploads/2007/05/baby_bunnies.jpg", user_id: 7},
+  {name: "Chilling", url: "http://blog.eli-white.com/wp-content/uploads/2014/08/1604879_10100412411081729_6951405832046604709_n.jpg", user_id: 7},
+  {name: "Out & about", url: "http://cdn.cutestpaw.com/wp-content/uploads/2013/04/s-A-white-rabbit.jpg", user_id: 7},
+  {name: "Henry", url: "http://farm4.static.flickr.com/3402/3429940425_79f5b89e1b.jpg", user_id: 5},
+  {name: "Smaragdina Betta", url: "http://akva-rio.ru/uploads/posts/2012-10/1351179702_betta-smaragdovaya-ili-zelenyy-petushok-betta-smaragdina.jpg", user_id: 4},
+  {name: "Gecko", url: "http://favim.com/orig/201104/14/Favim.com-18166.jpg", user_id: 14},
+  {name: "Gecko 2nd", url: "https://s-media-cache-ak0.pinimg.com/736x/bf/47/1b/bf471b6e52c18c9ea7e2f0dc49ae6a2a.jpg", user_id: 14},
+  {name: "Grumpy Cat", url: " http://rack.2.mshcdn.com/media/ZgkyMDEzLzA0LzAyLzU1L2dydW1weWNhdC40MjNiOS5wbmcKcAl0aHVtYgkxMjAweDYyNyMKZQlqcGc/831c241a/024/grumpycat.jpg", user_id: 6}
+])
+User.create!([
+  {name: "First", email: "", password_digest: "$2a$10$PZyADwS7wyZcupXvrHg.a.LRpkT2aB.4SK14Iadev68.9YG78WfRu"},
+  {name: "First", email: "d", password_digest: "$2a$10$Mbh0UvhZilFO.CntJrBzKu8.llDy3nve4l2Iq54VRtpS2twY4tQgW"},
+  {name: "Second", email: "", password_digest: "$2a$10$nxliRLGRHxMZL5fH7xPTluAlyMjbVN5UgmYI4C1Z47GKLS/7d.Jw."},
+  {name: "Aidan", email: "", password_digest: "$2a$10$R2ghpUtEw.Bm1h2MwPzRmu/U8T5xTy6Y9Vc/JjSdLWdFh2I7p2VHa"},
+  {name: "Tim", email: "", password_digest: "$2a$10$skk4xYhDIP2b6NQ4gWNf/ufEEV8XqRUEMGaPCwfHhbBtjU3SaT7FC"},
+  {name: "Mike", email: "", password_digest: "$2a$10$RfZZz64MfDTtR2Qo5PDqQ.RZb06lcYgfDnlmTd0g5kyf8DZwe39Ie"},
+  {name: "DT", email: "skdjfhaskj", password_digest: "$2a$10$P7VMBgEY8f0CvjkdGp64seso0TukRbD6/jAMr.qr2vZEWXPnVLOVi"},
+  {name: "Dorothee", email: "do", password_digest: "$2a$10$P4Bqlmm2mKAsf2rlGSbaY.O2etuwBR3sGGn4UFhUuFEmkqbKJqjh."},
+  {name: "Cameron", email: "", password_digest: "$2a$10$32zfvW3YTTsLQFlyw8VsVu8M3XgNK524oW6Hkhv/AHjpZAdYLnFGO"},
+  {name: "Martyn", email: "", password_digest: "$2a$10$hXPj6Ov1fjzsmvaiIIuD3u7Bf4U4AM8v6.8vsvmikF3Jg4lweoKFi"},
+  {name: "Steve", email: "", password_digest: "$2a$10$gLCihJJiI1oCV1fNjqGYZuYSB9WKprEGFho1NlvlVFnCcurok0yNi"},
+  {name: "Mike", email: "", password_digest: "$2a$10$MUui8FyrImDAcPiaN7kn7.FH97s62W2GwHib3HlhU5L7/fxK3NR2C"},
+  {name: "Tom", email: "", password_digest: "$2a$10$Ypsa4812U9MAu9UtU98JFObsBXvX/aMMokX0WiewZuNznaikfjlJa"},
+  {name: "New", email: "", password_digest: "$2a$10$/TzuVBIDc1Fvxj6cMG36w.7SXR7BjAqJC0yQL7kg6hascKL0wCkOK"}
+])

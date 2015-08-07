@@ -32,6 +32,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 group :production do
   gem 'rails_12factor'
 end
+
+gem 'seed_dump'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
