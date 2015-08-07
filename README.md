@@ -20,18 +20,18 @@ WireFrame:
 psql hosted tables.
 The site relies on two different tables.
 
-    **User table**
+    _User table_
     This is a table of all the user details and login information.
-    The **User** table has 3 columns. ** Name ** , **email** & **Password**.
+    The _User_ table has 3 columns. _Name_ , _email_ & _Password_.
 
     |Name|Email|Password|
     |----|-----|--------|
     |    |     |        |
 
-    ####Image table
-..This is a table of all the image details.
-..The **Image** table has 3 columns. **Name** , **url** & **User ID** which uploaded the image.
-    |Name|Email|Password|
+    _Image table_
+    This is a table of all the image details.
+    The _Image_ table has 3 columns. _Name_ , _Url_ & _User ID_ which uploaded the image.
+    |Name|Url  |User ID |
     |----|-----|--------|
     |    |     |        |
 
