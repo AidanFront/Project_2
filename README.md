@@ -12,28 +12,38 @@ An image hosting site made to host all those endless cat pictures.
 
 ###How it works
 
-WireFrame:
-![alt text](http://i.imgur.com/RHgvBaM.jpg)
+  *Start page
+  Users can log in or create a new account.
+  Once logged in users will be redirected to the Homepage.
+  *Home page
+  The home page will have a central news feed column of pictures that have been uploaded to 'PetPic'. A smaller side column will have a link and miniature thumbnails of the Users uploaded pictures. From here the user can
+    - select pictures from the newsfeed to view the large orginal uploaded picture
+    - Go to the Users profile page
+    - Log out.
+  * Users Profile page
+  This page will generate all the users pictures which can be enlraged for viewing, updating or deletion. From here the user can also upload more images.
 
+WireFrame:
+![alt text](http://i.imgur.com/nKuA2tD.jpg?1)
 
 ###Models
 psql hosted tables.
 The site relies on two different tables.
 
-    _User table_
+    __User table__
     This is a table of all the user details and login information.
-    The _User_ table has 3 columns. _Name_ , _email_ & _Password_.
+    The __User__ table has 3 columns. __Name__ , __email__ & __Password__.
 
-    |Name|Email|Password|
-    |----|-----|--------|
-    |    |     |        |
+    ID | Name     | Email       | Password
+    ---|----------|-------------|---------
+     1 | John Doe | JD@mail.com | Password      
 
-    _Image table_
+    __Image table__
     This is a table of all the image details.
-    The _Image_ table has 3 columns. _Name_ , _Url_ & _User ID_ which uploaded the image.
-    |Name|Url  |User ID |
-    |----|-----|--------|
-    |    |     |        |
+    The __Image__ table has 3 columns. __Name__ , __Url__ & __User ID__ which uploaded the image.
+     Name   | Url   | User_ID 
+    --------|-------|---------
+     Fluffy | imgur |  1      
 
 ###Cool tech/beens
 
