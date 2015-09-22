@@ -34,9 +34,9 @@ The site relies on two different tables.
     This is a table of all the user details and login information.
     The __User__ table has 3 columns. __Name__ , __email__ & __Password__.
 
-    ID | Name     | Email       | Password
-    -- | -------- | ----------- | --------
-     1 | John Doe | JD@mail.com | Password      
+     ID | Name     | Email       | Password
+    --- | -------- | ----------- | ---------
+     1  | John Doe | JD@mail.com | Password      
 
     __Image table__
     This is a table of all the image details.
