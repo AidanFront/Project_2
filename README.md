@@ -30,17 +30,15 @@ WireFrame:
 psql hosted tables.
 The site relies on two different tables.
 
-    ___User table___
-    This is a table of all the user details and login information.
-    The __User__ table has 3 columns. __Name__ , __email__ & __Password__.
+___User table___ 
+This is a table of all the user details and login information. The __User__ table has 3 columns. __Name__ , __email__ & __Password__.
 
- ID | Name     | Email         | Password
---- | -------- | ------------- | ---------
- 1  | John Doe | JD@madeup.com | Password      
+ ID | Name     | Email          | Password
+--- | -------- | -------------- | ---------
+ 1  | John Doe | 'JD@madeup.com | Password      
 
 ___Image table___
-    This is a table of all the image details.
-    The __Image__ table has 3 columns. __Name__ , __Url__ & __User ID__ which uploaded the image.
+This is a table of all the image details. The __Image__ table has 3 columns. __Name__ , __Url__ & __User ID__ which uploaded the image.
  Name   | Url   | User_ID 
 ------- | ----- | --------
  Fluffy | imgur |  1      
