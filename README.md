@@ -6,7 +6,7 @@ A socially acceptable place to put all those adorable pet pictures that you have
 
 ###How it works
 
-  * Start page
+  * Start page <br/>
   *Users can log in or create a new account.
   Once logged in users will be redirected to the Homepage.*
   * Home page
