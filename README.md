@@ -7,11 +7,9 @@ A socially acceptable place to put all those adorable pet pictures that you have
 ###How it works
 
   * Start page
-
   *Users can log in or create a new account.
   Once logged in users will be redirected to the Homepage.*
   * Home page
-  
   The home page will have a central news feed column of pictures that have been uploaded to 'PetPic'. A smaller side column will have a link and miniature thumbnails of the Users uploaded pictures. From here the user can
     - select pictures from the newsfeed to view the large orginal uploaded picture
     - Go to the Users profile page
