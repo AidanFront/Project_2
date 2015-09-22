@@ -1,21 +1,15 @@
-##GA WDI viiminds Project 2 
-
-***"PET PIC"***
-Heroku-hosted app.
-
-###Problem
+##PET PIC
 A socially acceptable place to put all those adorable pet pictures that you have.
-Do you want to be the guy who posts 100 puppy pictures in facebook, or have everyone unfollow your instagram profile? Its almost as bad as flooding with baby photo's.
 
-###Solution
-An image hosting site made to host all those endless cat pictures.
+###Website
+[petpic.herokuapp.com](https://petpic.herokuapp.com/)
 
 ###How it works
 
-  *Start page
-  Users can log in or create a new account.
-  Once logged in users will be redirected to the Homepage.
-  *Home page
+  * Start page
+  *Users can log in or create a new account.
+  Once logged in users will be redirected to the Homepage.*
+  * Home page
   The home page will have a central news feed column of pictures that have been uploaded to 'PetPic'. A smaller side column will have a link and miniature thumbnails of the Users uploaded pictures. From here the user can
     - select pictures from the newsfeed to view the large orginal uploaded picture
     - Go to the Users profile page
