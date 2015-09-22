@@ -11,9 +11,9 @@ A socially acceptable place to put all those adorable pet pictures that you have
   Once logged in users will be redirected to the Homepage.*
   * Home page <br/>
   The home page will have a central news feed column of pictures that have been uploaded to 'PetPic'. A smaller side column will have a link and miniature thumbnails of the Users uploaded pictures. From here the user can
-    ...- select pictures from the newsfeed to view the large orginal uploaded picture
-    ...- Go to the Users profile page
-    ... - Log out.
+    ..* select pictures from the newsfeed to view the large orginal uploaded picture
+    ..* Go to the Users profile page
+    ..*Log out.
   * Users Profile page <br/>
   This page will generate all the users pictures which can be enlraged for viewing, updating or deletion. From here the user can also upload more images.
 
