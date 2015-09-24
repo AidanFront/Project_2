@@ -8,7 +8,7 @@ A socially acceptable place to put all those adorable pet pictures that you have
 
 * Start page <br/>
 Users can log in or create a new account.
-Once logged in users will be redirected to the Homepage._
+Once logged in users will be redirected to the Homepage.
 * Home page <br/>
 The home page will have a central news feed column of pictures that have been uploaded to 'PetPic'. A smaller side column will have a link and miniature thumbnails of the Users uploaded pictures. From here the user can
  * Select pictures from the newsfeed to view the large orginal uploaded picture
@@ -31,9 +31,9 @@ The site relies on two different tables. These table were created in psql (Postg
 ___User table___ 
 This is a table of all the user details and login information. 
 
- ID | Name     | Email          | Password
---- | -------- | -------------- | ---------
- 1  | John Doe | 'JD@madeup.com | Password      
+ ID | Name     | Email           | Password
+--- | -------- | --------------- | ---------
+ 1  | John Doe | JD @ madeup.com | Password      
 
 ___Image table___
 This is a table of all the image details. At this stage picture are referenced through the a url and are not hosted directly by the site.
@@ -47,19 +47,19 @@ This is a table of all the image details. At this stage picture are referenced t
 __Ruby on Rails__
 Amazing framework with so many useful parts. Takes abit to get used to MVC.
 
-* Authenticating passwords <br/>
+* __Authenticating passwords__ <br/>
 This was really interesting to actually use the secure password function in rails.
-* html.erb files <br/>
+* __html.erb files__ <br/>
 Really cool to able to insert the view into a standard layout and incorporate ruby into the markup.
-* GEMS <br/>
+* __GEMS__ <br/>
 Almost a gem for everything.
 
-__Heroku__
+__Heroku__ <br/>
 A bit of trouble shooting to get this hosted. If the App has not been loaded in a browser recently it takes quite a while to initially load.
 
-__Bootstrap__
-Using Bootstrap for quick styling solutions was really helpful for buttons and creating an effective grid layout.
+__Bootstrap__ <br/>
+Using Bootstrap for quick styling solutions was really helpful for buttons and creating an effective grid layout. Although these are not as good as doing the custom styling myself (which take time) they are great 'off the shelf' styles.
 
-__Google fonts & Font Awesome__
+__Google fonts & Font Awesome__ <br/>
 Google fonts was extremely convenient (also free) way to look through a lot of styles. Due to the extremely short build time for this project this was very helpful. I settled for Monofett.
 Font Awesome was great for finding a wide range of useful symbols. I have used the thumbs up/down symbols so user can rate images. This some far has been implemented in the GitHub version only. (not on the heroku version)
