@@ -1,4 +1,4 @@
-##PET PIC
+#PET PIC
 A socially acceptable place to put all those adorable pet pictures that you have.
 
 ###Website
@@ -7,48 +7,59 @@ A socially acceptable place to put all those adorable pet pictures that you have
 ###How it works
 
 * Start page <br/>
-*Users can log in or create a new account.
-Once logged in users will be redirected to the Homepage.*
+Users can log in or create a new account.
+Once logged in users will be redirected to the Homepage._
 * Home page <br/>
 The home page will have a central news feed column of pictures that have been uploaded to 'PetPic'. A smaller side column will have a link and miniature thumbnails of the Users uploaded pictures. From here the user can
-⋅⋅* select pictures from the newsfeed to view the large orginal uploaded picture
-⋅⋅* Go to the Users profile page
-⋅⋅* Log out.
+ * Select pictures from the newsfeed to view the large orginal uploaded picture
+ * Go to the Users profile page
+ * Log out.
 * Users Profile page <br/>
 This page will generate all the users pictures which can be enlraged for viewing, updating or deletion. From here the user can also upload more images.
 
-WireFrame:
+#Build process 
+
+The intention was to build this application in Ruby on Rails, following a wireframe.
+
+###WireFrame:
 ![alt text](http://i.imgur.com/nKuA2tD.jpg?1)
 
 ###Models
-psql hosted tables.
-The site relies on two different tables.
+
+The site relies on two different tables. These table were created in psql (Postgress tables)
 
 ___User table___ 
-This is a table of all the user details and login information. The __User__ table has 3 columns. __Name__ , __email__ & __Password__.
+This is a table of all the user details and login information. 
 
  ID | Name     | Email          | Password
 --- | -------- | -------------- | ---------
  1  | John Doe | 'JD@madeup.com | Password      
 
 ___Image table___
-This is a table of all the image details. The __Image__ table has 3 columns. __Name__ , __Url__ & __User ID__ which uploaded the image.
+This is a table of all the image details. At this stage picture are referenced through the a url and are not hosted directly by the site.
+
  Name   | Url   | User_ID 
 ------- | ----- | --------
  Fluffy | imgur |  1      
 
+###Tech experience, thoughts/reflection
 
+__Ruby on Rails__
+Amazing framework with so many useful parts. Takes abit to get used to MVC.
 
-###Cool tech/beens
+* Authenticating passwords <br/>
+This was really interesting to actually use the secure password function in rails.
+* html.erb files <br/>
+Really cool to able to insert the view into a standard layout and incorporate ruby into the markup.
+* GEMS <br/>
+Almost a gem for everything.
 
-###Bootstrap
-Bootstrap styling solutions was really helpful for buttons and was very helpfull for creating a grid layout for the home page.
+__Heroku__
+A bit of trouble shooting to get this hosted. If the App has not been loaded in a browser recently it takes quite a while to initially load.
 
-###Google fonts & Font Awesome
-Google fonts was helpfull for finding an approrpiate font for the application name. Very easy to link and apply. I settled for Monofett.
-Font Awesome was great for finding usefull symbols. I have used the thumbs up/down symbols so user can rate images. This some far has been implemented in the GitHub version only.
+__Bootstrap__
+Using Bootstrap for quick styling solutions was really helpful for buttons and creating an effective grid layout.
 
-###Angrybits/Challenges & Lessons Learned
-
-##Whats next
-Project 3? BabyPic? FoodPic?
+__Google fonts & Font Awesome__
+Google fonts was extremely convenient (also free) way to look through a lot of styles. Due to the extremely short build time for this project this was very helpful. I settled for Monofett.
+Font Awesome was great for finding a wide range of useful symbols. I have used the thumbs up/down symbols so user can rate images. This some far has been implemented in the GitHub version only. (not on the heroku version)
